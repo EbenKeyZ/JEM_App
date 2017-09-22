@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">JEM</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="about_other_information"><![CDATA[About & Other Information:]]></string>
+    <string name="image_of_entity">Image of Entity</string>
+    <string name="image_caption">Image Caption</string>
+    <string name="home">Home</string>
+    <string name="daily_devotion">Daily Devotion</string>
+    <string name="announcements">Announcements</string>
+    <string name="events">Events</string>
+    <string name="live_radio">Live Radio</string>
+    <string name="live_video">Live Video</string>
+    <string name="podcast">Podcast</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="splash_image">Splash Image</string>
+    <string name="logo">logo</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="bypass">bypass</string>
+    <string name="jonathan_ekuban_ministries">Jonathan Ekuban Ministries</string>
+    <string name="springs_of_life_chapel_international">Springs of Life Chapel International</string>
+    <string name="name">Name</string>
+    <string name="title">Title</string>
+    <string name="about">About:</string>
+    <string name="content">Content</string>
+    <string name="images_of">Images of</string>
+</resources>
