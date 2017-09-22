@@ -13,7 +13,7 @@
 
         <ImageView
             android:id="@+id/profileImageAbt"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:background="@drawable/my_border"
             android:contentDescription="@string/image_of_entity"
             android:padding="5dp"
