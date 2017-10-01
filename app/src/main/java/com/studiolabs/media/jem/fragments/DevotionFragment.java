@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.studiolabs.media.jem.BackgroundTask.devotions_Task;
 import com.studiolabs.media.jem.R;
 
 /**
@@ -15,8 +16,13 @@ import com.studiolabs.media.jem.R;
 public class DevotionFragment extends Fragment {
 
 
-    public DevotionFragment() {
-        // Required empty public constructor
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        devotions_Task devotionsTask = new devotions_Task(DevotionFragment.this.getContext());
+        devotionsTask.execute();
+
     }
 
 

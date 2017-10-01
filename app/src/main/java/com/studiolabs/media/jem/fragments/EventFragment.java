@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.studiolabs.media.jem.BackgroundTask.event_Task;
 import com.studiolabs.media.jem.R;
 
 /**
@@ -14,9 +15,13 @@ import com.studiolabs.media.jem.R;
  */
 public class EventFragment extends Fragment {
 
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-    public EventFragment() {
-        // Required empty public constructor
+        event_Task eventTask = new event_Task(EventFragment.this.getContext());
+        eventTask.execute();
+
     }
 
 

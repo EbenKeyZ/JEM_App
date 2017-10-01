@@ -31,12 +31,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        drawerLayout.setDrawerShadow(R.drawable.drawer_shadow,GravityCompat.START);
+
         toolbar = (Toolbar) findViewById(R.id.nav_action);
 
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
         setSupportActionBar(toolbar);
 
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
+        drawerLayout.closeDrawers();
         actionBarDrawerToggle.syncState();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

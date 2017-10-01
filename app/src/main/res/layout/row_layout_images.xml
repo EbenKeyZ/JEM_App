@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
     android:id="@+id/cont_item_root"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,16 +11,18 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="2dp"
+        card_view:elevation="10dp">
 
         <ImageView
             android:id="@+id/profileImageAbt"
             android:layout_width="wrap_content"
+            android:layout_height="245dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
             android:background="@drawable/my_border"
             android:contentDescription="@string/image_of_entity"
-            android:padding="5dp"
-            android:layout_height="245dp"
-            android:layout_margin="5dp"
             android:scaleType="centerInside"
             android:src="@drawable/loading" />
 
@@ -29,11 +33,7 @@
             android:layout_below="@+id/profileImage"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="20dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/image_caption"
             android:textColor="#fff"
             android:textSize="12sp" />

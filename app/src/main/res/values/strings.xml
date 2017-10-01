@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">JEM</string>
+    <string name="app_name">JEM App</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="about_other_information"><![CDATA[About & Other Information:]]></string>
@@ -27,4 +27,6 @@
     <string name="about">About:</string>
     <string name="content">Content</string>
     <string name="images_of">Images of</string>
+    <string name="event_details">Event Details</string>
+    <string name="event_title">Event Title</string>
 </resources>

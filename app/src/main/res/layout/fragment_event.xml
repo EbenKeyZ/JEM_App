@@ -1,15 +1,22 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.studiolabs.media.jem.fragments.EventFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:text="@string/events"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/eventDetails_recList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarTrackHorizontal="@color/colorBar"
+        android:scrollbars="vertical"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:layout_gravity="center_horizontal|center_vertical"/>
-
-</FrameLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>
